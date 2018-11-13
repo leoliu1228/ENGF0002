@@ -293,6 +293,7 @@ class Model():
             self.homes_occupied[i] = False
 
     def died(self):
+        return
         self.lives = self.lives - 1
         self.controller.died()
         if self.lives == 0:
@@ -338,6 +339,7 @@ class Model():
         self.frog.reset_position()
         self.lives = 7
         self.controller.update_lives(self.lives)
+        self.frog.reset_position()
         self.reset_homes()
         self.controller.unregister_objects()
         self.create_logs()
@@ -366,7 +368,7 @@ class Model():
             # check if it's now on any other log
             for log in self.logs:
                 if log.contains(self.frog):
-                    on_long = log
+                    on_log = log
                     break
         if on_log is None:
             # frog is not on a log - it must be in the water
