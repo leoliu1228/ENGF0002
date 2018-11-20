@@ -350,12 +350,12 @@ See The Hitchhiker’s Guide to Python \url{http://docs.python-guide.org/en/late
 We define our GCD function in \texttt{euclid/gcd.py}
   \inputminted[
     xleftmargin=1.4em,
-    frame=lines,
-    framesep=2mm,
+    %frame=lines,
+    %framesep=2mm,
     %baselinestretch=1.2,
-    % bgcolor=lightgray,
+    bgcolor=stone,
     fontsize=\scriptsize,
-    linenos
+    %linenos
   ]{python}{src/euclid/euclid/gcd.py}
 
 
@@ -380,12 +380,12 @@ The variable \texttt{\_\_all\_\_} restricts the names exported, \\ by eg. \textt
   
   \inputminted[
     xleftmargin=1.4em,
-    frame=lines,
-    framesep=2mm,
+    %frame=lines,
+    %framesep=2mm,
     %baselinestretch=1.2,
-    % bgcolor=lightgray,
+    bgcolor=stone,
     fontsize=\scriptsize,
-    linenos
+    %linenos
   ]{python}{src/euclid/euclid/__init__.py}
 
 \end{frame}
@@ -396,12 +396,12 @@ The variable \texttt{\_\_all\_\_} restricts the names exported, \\ by eg. \textt
 
   \inputminted[
     xleftmargin=1.4em,
-    frame=lines,
-    framesep=2mm,
+    %frame=lines,
+    %framesep=2mm,
     %baselinestretch=1.2,
-    % bgcolor=lightgray,
+    bgcolor=stone,
     fontsize=\scriptsize,
-    linenos
+    %linenos
   ]{python}{src/euclid/setup.py}
 
 \end{frame}
@@ -458,6 +458,13 @@ $ python setup.py install
   The tool of choice for this is \texttt{tox}. You can define \emc{environments}, \emc{dependencies}, and \emc{commands} to test in them
 
 \end{frame}
+
+
+\begin{frame}
+  \frametitle{Tox workflow}
+  \includegraphics[height=65mm]{assets/tox}
+\end{frame}
+
 
 \begin{frame}[fragile]
 
